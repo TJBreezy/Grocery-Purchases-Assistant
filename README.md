@@ -1,1 +1,10 @@
 # Grocery-Purchases-Assistant
+This file contains a Python program that calculates the total cost of a list of food items based on their quantities and prices. The program prompts the user to input the type of food, the number of items, and the cost per item for each food item. It then calculates the total cost of all the items and checks if it exceeds the maximum cost specified by the user. If the total cost exceeds the maximum cost, the program calculates the maximum number of items that can be purchased for each item in the list of excess costs to stay within the maximum cost. It then returns an error message along with a list of recommended items and their maximum number of items. Otherwise, it returns the formatted total cost and currency code as before.
+
+The program defines several functions to achieve this functionality:
+
+calculate_total_cost(items, currency_code, max_cost): Calculates the total cost of the food items, keeping track of the excess costs of items that exceed KES 50. If the total cost exceeds the maximum cost, the function calculates the maximum number of items that can be purchased for each item in the excess costs list to stay within the maximum cost. It then returns an error message along with a list of recommended items and their maximum number of items. Otherwise, it returns the formatted total cost and currency code as before.
+get_food_list(): Prompts the user to input the type of food, the number of items, and the cost per item for each food item and returns a list of tuples containing the food type, the number of items, and the cost per item for each food item.
+get_max_cost(): Prompts the user to input the maximum cost and returns it as a float.
+print_total_cost(total_cost): Prints the total cost of the food items.
+The program starts by calling get_food_list() to get the list of food items from the user. It then calls get_max_cost() to get the maximum cost from the user. Finally, it calls calculate_total_cost() to calculate the total cost of the food items and prints the result using print_total_cost().
